@@ -1,6 +1,24 @@
 ---
 title: Introduction
-description: "Welcome to the home of your new documentation"
+description: "API, simplified."
 ---
 
-Short little intro.
+Wrapi is an ultra simplified way to ship an API. Allow your users to create API keys, track their own usage, and pay for credits all in one platform.
+Basically, all the heavy lifting of tracking millions of requests, handling payments, and managing your API users is all already done for you.
+
+## How easy is Wrapi to implement?
+
+All you need to do is install the Wrapi package (available in many languages), write a few lines of code into your API's middleware, and ..., thats actually it.
+
+Wrapi can take up less than 20 lines of code in your API, allowing you to keep devving without any inconveniences.
+
+## How does Wrapi work?
+
+Essentially, you link each of your users to a UID (User ID) in Wrapi. Your user can then create API keys and load credits onto their account.
+From there, you insert a few lines into your middleware that do the following:
+
+- Get the route name and API key from the request
+- Figure out the cost of the API call
+- Log the request and bill the API key accordingly
+
+After that is implemented, you can track any analytics you want about usage and cost. You can even make this data available to your consumers, allowing them to view their history.
